@@ -1,0 +1,34 @@
+
+// FONT BASE
+$font-size--base: 18;
+
+// MAX-WIDTH CONTAINER SIZE
+$max-width: 1920;
+
+
+// BREAKPOINTS
+$medium: 1244; //used
+$small: 900; //used
+
+
+// COLORS
+$copy-black: hsla(0, 0%, 0%, 1);
+$copy-dark: hsla(0, 0%, 21%, 1);
+$copy-white: hsla(0, 0%, 100%, 1);
+$grey-dark: hsla(0, 0%, 35%, 1);
+$grey-light: hsla(0, 0%, 84%, 1);
+$grey-super-light: hsla(0, 0%, 97%, 1);
+$orange-nav: hsla(26, 100%, 72%, 1);
+$orange-header: hsla(26, 62%, 57%, 1);
+$orange-bg: hsla(23, 100%, 97%, 1);
+$orange-border: hsla(26, 86%, 69%, 1);
+
+// ICON
+$icon-width-desktop: 200px;
+$icon-width-mobile: 150px;
+
+// LEVEL CARD
+$level-card-padding-top: calc($icon-width-mobile / 2)
+
+
+

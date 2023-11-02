@@ -1,0 +1,44 @@
+.sidenav {
+    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 75%;
+    background-color: $copy-dark;
+    overflow-x: hidden;
+    transition: transform 0.5s;
+    padding-top: 0.5rem;
+    text-align: end;
+
+    span {
+
+        transform: rotate(45deg);
+        font-size: 3rem;
+        color: $orange-nav;
+        cursor: pointer;
+    }
+
+    li {
+
+        margin-bottom: 2rem;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.show {
+
+    width: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    color: $copy-white;
+}

@@ -1,0 +1,98 @@
+---
+title: Marcus G. Miller
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }}</title>
+        <link rel='stylesheet' href='/style.css'>
+
+        <meta name="description" content="Find Informations about Choreography Workshops by Marcus G. Miller">
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:description" content="Page description">
+        <meta property="og:image" content="https://www.mywebsite.com/images/og_image.jpg">
+        <meta property="og:image:alt" content="Marcus G. Miller dancing">
+        <meta property="og:locale" content="en_GB">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:url" content="https://www.mywebsite.com/">
+        <link rel="canonical" href="https://www.mywebsite.com/">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+
+    </head>
+
+    <body>
+        <div class="sidenav" id="sidenav">
+            <span id="close">+</span>
+            <ul>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#about">About ME</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="wrapper">
+                <div class="nav-row">
+                    <div class="branding">
+                        <a href="/"><h1>Marcus G. Miller <span class="h1-thin">| Choreographer</span></h1></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#workshops">Workshops</a></li>
+                            <li><a href="#about">About ME</a></li>
+                            <li><a href="#news">News</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-mobile" >
+                        <button id="hamburger">
+                            <div class="lines">
+                                <span class="line"></span>
+                                <span class="line line2"></span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero">
+                    <h2>I believe you can dance.</h2>
+                    <a href="#" class="button">Book Workshop</a>
+                </div>
+            </div>
+        </header>
+
+        {{ content }}
+
+        <footer>
+            <div class="wrapper">
+                <div class="footer-left">
+                    <h4>Thank you for your interest in Art!</h4>
+                    <p>© 2004 – {{ year }} Aaron G. Miller</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#">Imprint & Privacy</a> 
+                </div>
+            </div>
+        </footer>
+
+        <script src='js/main.js'></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                // MainNav.init();
+            });
+        </script>
+</body>
+</html>
+

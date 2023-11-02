@@ -1,0 +1,22 @@
+#hamburger {
+    
+    .lines {
+        width: 30px;
+        height: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+
+        .line {
+            height: 2px;
+            width: 100%;
+            background: $orange-nav;
+        }
+        
+        .line2 {
+            width: 70%;
+        }
+    }
+}

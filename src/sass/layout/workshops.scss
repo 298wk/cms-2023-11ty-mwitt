@@ -1,0 +1,33 @@
+#workshops {
+
+  .first {
+          
+    justify-content: flex-start;      
+  }
+
+  .second {
+    justify-content: center;
+  }
+
+  .third {
+    justify-content: flex-end;      
+  }
+  
+  .top {
+    align-items: flex-start;
+  }
+  
+  .center {
+    align-items: center;
+  }
+  
+  .bottom {
+    align-items: flex-end;
+  }
+ 
+  @import "../level";
+  
+}
+
+
+

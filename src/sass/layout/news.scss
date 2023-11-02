@@ -1,0 +1,26 @@
+
+#news {
+    width: 100%;
+
+    .row {
+        align-items: center;
+        justify-content: space-between;
+        min-width: rem(1220);
+    }
+    
+    @import "../article";
+}
+
+@include breakpoint(0, $medium) {
+
+    #news {
+
+        .row {
+            width: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            min-width: auto; 
+        }
+    }
+}
+

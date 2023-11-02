@@ -1,0 +1,96 @@
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $orange-bg;
+    height: auto;
+
+    .about-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+
+        img {
+            height: rem(650);
+        }
+
+        .about-description {
+            width: 24%;
+            padding: 4rem 0 4rem rem(20);
+           
+            p {
+                padding-bottom: rem(20);
+                display: inline-block;
+            }
+
+            p.super-headline {
+                padding: 0;
+            }
+
+            .button {
+                margin: 0;
+                display: inline-block;
+                padding-top: rem(10);
+                padding-bottom: rem(10);
+            }
+        }
+    }
+}
+
+@include breakpoint(0, $medium) {
+
+    #about {
+    
+        .about-wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+    
+            img {
+                width: 100%;
+                height: auto;  
+                min-width: auto;
+            }
+    
+            .about-description {
+                width: 100%;
+                padding: rem(20) rem(20) 0 rem(20);
+
+                .super-headline {
+                    padding: 0;
+                }
+
+                h2 {
+                    padding: 0;
+                    margin-bottom: rem(30);
+                }
+               
+                p {
+                    display: inline-block;
+                    padding-bottom: rem(20);
+                }
+    
+                .button {
+                    margin-top: rem(20);
+                    margin-bottom: rem(20);
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint($medium+1, 1800) {
+    #about {
+        .about-wrapper {
+
+            .about-description {
+                width: 40%;
+            }
+        }
+    }
+}

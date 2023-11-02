@@ -1,0 +1,160 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    overflow: hidden;
+
+    .wrapper {
+
+        padding: rem(20);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        background-size: 110vh;
+        background-image: url('../images/dance_group_90dpi_2000.jpg');
+        background-repeat: no-repeat;
+        background-position: 110% 100px;
+
+        .hero {
+            width: 100%;
+            padding-top: 25vh;
+            padding-left: 5%;
+
+
+            h2 {
+                margin-bottom: rem(50);
+            }
+
+            .button {
+                color: $copy-white;
+            }
+
+        }
+    }
+}
+
+// wild breakpoints for header/background section
+
+@include breakpoint($min_width: 0, $max_width: 799, $min_height: 999, $max_height: 3000) {
+    header {
+        .wrapper {
+
+            background-position: 50% 80px;
+            background-size: 100vh;
+
+            .hero {
+                align-self: flex-start;
+                width: 50%;
+                margin-left: 50%;
+                margin-top: 350px;
+            }
+        }
+    }
+}
+
+@include breakpoint($min_width: 0, $max_width: 799, $min_height: 0, $max_height: 998) {
+    header {
+        .wrapper {
+
+            background-position: 50% 80px;
+            background-size: 100vh;
+
+            .hero {
+                align-self: flex-start;
+                width: 55%;
+                margin-left: 45%;
+                margin-top: 200px;
+            }
+
+            
+        }
+    }
+}
+
+@include breakpoint($min_width: 800, $max_width: 1799, $min_height: 1001, $max_height: 3000) {
+    header {
+        .wrapper {
+
+            background-position: 50% 100px;
+            background-size: 110vh;
+
+            .hero {
+                align-self: flex-start;
+                width: 50%;
+                margin-left: 50%;
+                margin-top: 400px;
+            }
+        }
+    }
+}
+
+@include breakpoint($min_width: 800, $max_width: 1799, $min_height: 601, $max_height: 1000) {
+    header {
+        .wrapper {
+
+            background-position: 50% 100px;
+            background-size: 110vh;
+
+            .hero {
+                align-self: flex-start;
+                width: 50%;
+                margin-left: 50%;
+                margin-top: 250px;
+            }
+        }
+    }
+}
+
+@include breakpoint($min_width: 800, $max_width: 1799, $min_height: 0, $max_height: 600) {
+    header {
+        .wrapper {
+
+            background-position: 30% 80px;
+            background-size: 150vh;
+
+            .hero {
+                align-self: flex-start;
+                width: 50%;
+                margin-left: 50%;
+                margin-top: 100px;
+            }
+        }
+    }
+}
+
+@include breakpoint($min_width: 1800, $max_height: 1000) {
+    header {
+        .wrapper {
+
+            background-position: 80% 100px;
+
+            .hero {
+                align-self: flex-start;
+                width: 30rem;
+                margin-left: 10%;
+            }
+        }
+    }
+}
+
+@include breakpoint($min_width: 1800, $max_height: 600) {
+    header {
+        .wrapper {
+
+            background-position: 80% 20px;
+            background-size: 200vh;
+
+            .hero {
+                align-self: flex-start;
+                width: 30rem;
+                margin-left: 10%;
+            }
+        }
+    }
+}
+
